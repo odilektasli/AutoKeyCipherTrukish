@@ -70,10 +70,14 @@ class Decryption extends React.Component {
     render() {
         return (
             <Form>
-                <h1 className="text-center text-white">Decryption</h1>
+                <h1 className="text-center">Decryption</h1>
                 <Input className="my-3" id="key" onChange={(event) => this.setState({ keyInput: event.target.value.toLocaleUpperCase('tr-TR') })} placeholder="Key giriniz..."></Input>
                 <Input className="my-3" onChange={(event) => this.setState({ cipherText: event.target.value.toLocaleUpperCase('tr-TR') })} placeholder="Text giriniz..."></Input>
-                <Button onClick={() => { this.decryption() }}>Decrypt</Button>
+                <Row className="d-flex justify-content-center">
+                    <Col xs="auto my-1">
+                        <Button onClick={() => { this.decryption() }}>Decrypt</Button>
+                    </Col>
+                </Row>
                 {
                     this.state.plainText ? (
                         <Input disabled value={this.state.plainText} />
