@@ -78,7 +78,7 @@ class Encryption extends React.Component {
     render() {
         return (
             <Form id="submit-form" onSubmit={this.encryption}>
-                <h1 className="text-center">Encryption</h1>
+                <h1 className="text-center" style={{color: "white"}}>Encryption</h1>
                 <Input className="my-3" onChange={(event) => this.setState({ key: event.target.value.toLocaleUpperCase('tr-TR'), deneme: event.target.value.toLocaleUpperCase('tr-TR') })} placeholder="Key giriniz..."></Input>
                 <Input className="my-3" onChange={(event) => this.setState({ text: event.target.value.toLocaleUpperCase('tr-TR') })} placeholder="Text giriniz..."></Input>
                 <Row className="d-flex justify-content-center">

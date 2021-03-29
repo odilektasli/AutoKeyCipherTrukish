@@ -1,0 +1,30 @@
+.VerticalLine{
+  border-left: 6px solid green;
+  height: 100%;
+}
+
+.Background {
+  background-image: url("./background.png");
+  z-index: 1;
+  position: absolute;
+  top: -16px !important;
+  right: -16px !important;
+  bottom: -16px !important;
+  left: -16px !important;
+  background-color: rgb(0, 0, 0);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  filter: blur(7px);
+}
+.Banner {
+  position: relative;
+  overflow: hidden !important;
+  background-color: black;
+}
+.Banner p {
+  font-size: 14pt;
+}
+.Input{
+  z-index: 2;
+}

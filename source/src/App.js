@@ -10,8 +10,9 @@ import {
     Form
 } from 'reactstrap'
 import logo from './logo.svg';
-import styles from './App.css';
+import styles from './App.module.css';
 import Background from './background.jpg'
+import TypeWritter from './global/typeWritter'
 
 class App extends React.Component {
 
@@ -79,14 +80,20 @@ class App extends React.Component {
     render() {
         return (
             <Container className="align-items-center" >
-                <Row >
-                    <Col >
-                        <Encryption />
-                    </Col>
-                    <Col>
-                        <Decryption />
-                    </Col>
-                </Row>
+                    <Row >
+                        <Col className={styles.Input}>
+                            <TypeWritter value="ISE-426 Computer Security / Vigenère Autokey System " />
+                        </Col>
+                        <Col className={styles.Input}>
+                            <Encryption />
+                        </Col>
+                        <Col className={styles.Input}>
+                            <Decryption />
+                        </Col>
+                        <div className={styles.Background} />
+                    </Row>
+                    
+
             </Container>
         )
     }

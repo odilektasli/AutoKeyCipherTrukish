@@ -70,7 +70,7 @@ class Decryption extends React.Component {
     render() {
         return (
             <Form>
-                <h1 className="text-center">Decryption</h1>
+                <h1 className="text-center" style={{color: "white"}}>Decryption</h1>
                 <Input className="my-3" id="key" onChange={(event) => this.setState({ keyInput: event.target.value.toLocaleUpperCase('tr-TR') })} placeholder="Key giriniz..."></Input>
                 <Input className="my-3" onChange={(event) => this.setState({ cipherText: event.target.value.toLocaleUpperCase('tr-TR') })} placeholder="Text giriniz..."></Input>
                 <Row className="d-flex justify-content-center">
