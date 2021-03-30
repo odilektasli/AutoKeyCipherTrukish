@@ -16,6 +16,7 @@
   background-attachment: fixed;
   background-size: cover;
   filter: blur(7px);
+  overflow: visible !important; 
 }
 .Banner {
   position: relative;
