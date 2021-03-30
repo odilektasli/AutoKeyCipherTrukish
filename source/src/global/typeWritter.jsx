@@ -50,7 +50,7 @@ class TypeWritter extends React.Component {
 
     render() {
         return (
-            <p className={styles.TypeWritter + " px-2 pt-3 mb-5 mt-5 mx-auto text-center text-sm-left"} style={{ width: (this.state.width + 3) + "ch", fontSize: "25pt" }}>
+            <p className={styles.TypeWritter + " px-2 pt-2 mx-auto text-center text-sm-left"} style={{ width: (this.state.width + 3) + "ch", fontSize: "25pt" }}>
                 {[this.state.value, (this.state.cursor ? '|' : <span>&nbsp;</span>)]}
             </p>
         )
