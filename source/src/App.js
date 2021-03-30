@@ -14,7 +14,7 @@ import {
 import logo from './logo.svg';
 import styles from './App.module.css';
 import Background from './background.jpg'
-import TypeWritter from './global/TypeWritter'
+import TypeWritter from './global/typeWritter'
 
 class App extends React.Component {
 
@@ -98,27 +98,30 @@ class App extends React.Component {
 
     render() {
         return (
-            <Container className="align-items-center" >
-                <Row>
-                    <Col className={styles.Input}>
-                        <TypeWritter value="ISE-426 Computer Security / Vigenère Autokey System " />
-                    </Col>
-                </Row>
-                <Row className="d-flex justify-content-center">
-                    <Col className={styles.Input} xs="auto">
-                        <AlphabetSelection setAlphabet={this.setAlphabet} />
-                    </Col>
-                </Row>
-                <Row >
-                    <Col className={styles.Input}>
-                        <Encryption alphabet={this.state.alphabet} table={this.state.table} letters={this.state.letters} />
-                    </Col>
-                    <Col className={styles.Input}>
-                        <Decryption alphabet={this.state.alphabet} table={this.state.table} letters={this.state.letters} />
-                    </Col>
-                    <div className={styles.Background} />
-                </Row>
-            </Container>
+            <div className={styles.Banner}>
+                <Container className="align-items-center">
+                    <Row>
+                        <Col className={styles.Input}>
+                            <TypeWritter value="ISE-426 Computer Security / Vigenère Autokey System " />
+                        </Col>
+                    </Row>
+                    <Row className="d-flex justify-content-center">
+                        <Col className={styles.Input} xs="auto">
+                            <AlphabetSelection setAlphabet={this.setAlphabet} />
+                        </Col>
+                    </Row>
+                    <Row >
+                        <Col className={styles.Input}>
+                            <Encryption alphabet={this.state.alphabet} table={this.state.table} letters={this.state.letters} />
+                        </Col>
+                        <Col className={styles.Input}>
+                            <Decryption alphabet={this.state.alphabet} table={this.state.table} letters={this.state.letters} />
+                        </Col>
+
+                    </Row>
+                </Container>
+                <div className={styles.Background} />
+            </div>
         )
     }
 

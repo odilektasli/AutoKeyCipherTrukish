@@ -11,17 +11,18 @@
   right: -16px !important;
   bottom: -16px !important;
   left: -16px !important;
-  background-color: rgb(0, 0, 0);
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
   filter: blur(7px);
+  opacity: 0.5;
   overflow: visible !important; 
 }
 .Banner {
   position: relative;
   overflow: hidden !important;
   background-color: black;
+  height: 100vh;
 }
 .Banner p {
   font-size: 14pt;
